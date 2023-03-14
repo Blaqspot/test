@@ -1,0 +1,183 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav h3{
+    padding: 0.5em;
+    margin: 1em;
+}
+
+
+nav ul{
+    gap: 10px;
+    display: flex;
+    margin: auto;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+nav ul li{
+    background-color: #46434399;
+    color: white;
+    padding: 0.5em;
+}
+
+nav ul li:hover{
+    color: red;
+    background-color: black;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+nav img{
+    padding: 0.5em;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 60px;
+}
+
+.main-container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 1em;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.main-container h3{
+    text-align: center;
+}
+
+.photo-gallery{
+    width: 50%;
+    height: 60vh;
+    padding: 2em;
+    background: white;
+    box-shadow: #9999 0 5px 9px 0;
+
+
+}
+
+
+.photo-cards-box{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 90%;
+    height: 55vh;
+    background-color: white;
+}
+
+.photo-cards{
+    width: 30%;
+    height: 30%;
+    padding: 0.5em;
+
+
+}
+
+.photo-cards img{
+    width: 100%;
+    height: 100%;
+}
+
+.photo-cards img:hover{
+   transition: 200ms;
+   transform: translate(1em);
+   cursor: pointer;
+
+}
+
+.Profile{
+    background-color: #9999;
+    width: 40%;
+    height: 70vh;
+    padding-right: 2em;
+}
+
+.background{
+    background-image: url(images/4802083237200_2968871278739.jpg);
+    background-position: cover;
+    background-size: 100% 68vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    margin-left: 1em ;
+}
+.background:hover{
+    background-image: url(images/4802083237200_2968871278739.jpg);
+    background-position: cover;
+    background-size: 100% 68vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    margin-left: 1em ;
+    cursor: pointer;
+}
+
+.pic{
+    width: 40%;
+    height: 30vh;
+}
+
+.pic img{
+    border-radius: 100px;
+    margin: 13em 10em 0 10em;
+}
+
+.pic img:hover{
+    width: 60%;
+    height: 20vh;
+    border-radius: 150px;
+    cursor: pointer;
+    margin: 17.5em 10em 0 12em;
+}
+
+
+.load{
+    padding-left: 2em;
+
+}
+
+.load .enter{
+    width: 90%;
+    height: 30px;
+    border-radius: 9px;
+}
+
+.load .enter:hover{
+    width: 90%;
+    height: 30px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+
+/* media query for smaller screen */
+@media screen and (max-width: 414px) {
+
+        .pic{
+            width: 40%;
+            height: 30vh;
+        }
+        
+        .pic img{
+            border-radius: 200px;
+            margin: 7em 5em 0 5em;
+        }
+     
+} 
